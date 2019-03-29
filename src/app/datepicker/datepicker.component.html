@@ -1,0 +1,9 @@
+<div class="datepicker">
+  <input class="datepicker__input"
+        [placeholder]="placeholder||''"
+        [disabled]="disabled"
+        ngbDatepicker #calendar="ngbDatepicker"
+        [navigation]="'arrows'"
+        (click)="calendar.toggle()">
+  <i class="fas fa-calendar datepicker__icon"></i> 
+</div>

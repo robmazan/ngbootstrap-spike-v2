@@ -1,0 +1,83 @@
+.datepicker__input {
+  border-radius: 6px;
+  border: solid 1px #a7b0c6;
+  background-color: #f7f7fd;
+  height: 16px;
+  padding: 12px 15px;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  color: #4a4a4a;  
+}
+
+.datepicker__input:disabled {
+  border: solid 1px rgba(155, 155, 155, 0.35);
+}
+
+.datepicker__input::placeholder {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  color: #7a87a7;  
+}
+
+.datepicker__icon {
+  margin-left: -25px;
+  color: #7a87a7;
+  pointer-events: none;
+}
+
+.datepicker__input:disabled,
+.datepicker__input:disabled::placeholder,
+.datepicker__input:disabled ~ .datepicker__icon {
+  color: #bebebe;
+}
+
+/* Datepicker overrides */
+
+.datepicker .ngb-dp-month-name {
+  font-family: 'Open Sans';
+  font-size: 18px;
+  font-weight: 600;
+  color: #4a4a4a;
+}
+
+.datepicker .ngb-dp-navigation-chevron {
+  border-color: #009fda;
+  width: 8px;
+  height: 8px;
+  border-width: 2px 2px 0 0;
+  vertical-align: top;
+}
+.datepicker .ngb-dp-weekday.small {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  color: #7a87a7;  
+}
+
+.datepicker .ngb-dp-weekdays {
+  border: 0;
+}
+
+.datepicker .ngb-dp-day {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  color: #4a4a4a;
+}
+
+.datepicker .ngb-dp-day:focus {
+  border-radius: 3px;
+  border: solid 1px #0c749b;
+  outline: 0;
+  font-weight: 600;
+  color: #4a4a4a;
+}
+
+.datepicker ngb-datepicker {
+  padding: 10px 16px !important;
+  top: -42px !important;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px 0 rgba(122, 135, 167, 0.25);
+  border: solid 1px #7a87a7;
+  background-color: #f7f7fd;
+}

@@ -1,0 +1,11 @@
+<form>
+  <app-datepicker disabled="false" placeholder="Hello" [(ngModel)]="myDate" #dateCtrl="ngModel" name="myDate"></app-datepicker>
+  <pre>My date value: {{myDate|json}}</pre>
+  <pre>Touched: {{dateCtrl.touched}}</pre>
+  <pre>Dirty: {{dateCtrl.dirty}}</pre>
+  <hr>
+  <app-my-input name="myInput" [(ngModel)]="myText" #textCtrl="ngModel"></app-my-input>
+  <pre>My text value: {{myText}}</pre>
+  <pre>Touched: {{textCtrl.touched}}</pre>
+  <pre>Dirty: {{textCtrl.dirty}}</pre>
+</form>
